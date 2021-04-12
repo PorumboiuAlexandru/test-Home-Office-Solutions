@@ -28,7 +28,7 @@ namespace Home_Office_Solutions.Controllers
         }
         // GET api/KeyW<Stationary>/5
         [HttpGet("KeyW{word}")]
-        public IHttpActionResult GetAllcustomersByKeyword(string keyword)
+        public IHttpActionResult GetAllcustomersByKeyword(string keyword)w
         {
             db.Configuration.ProxyCreationEnabled = false;
             var result = db.Stationary.Where(m => m.Name.Contains(keyword)).Select(m
