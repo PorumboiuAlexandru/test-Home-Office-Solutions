@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Http;
+
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,7 +27,7 @@ namespace Home_Office_Solutions.Controllers
             return "value";
         }
         // GET api/KeyW<Stationary>/5
-        [System.Web.Http.HttpGet("KeyW{word}")]
+        [HttpGet("KeyW{word}")]
         public IHttpActionResult GetAllcustomersByKeyword(string keyword)
         {
             db.Configuration.ProxyCreationEnabled = false;
